@@ -1,0 +1,19 @@
+name: BlockLimit
+version: '${version}'
+main: moe.konara.blocklimit.BlockLimit
+api-version: '1.18'
+load: STARTUP
+authors: [Konara]
+commands:
+  blocklimit:
+    description: Basic Command.
+    usage: WRONG
+    permission: blocklimit.admin
+    permission-message: You don't have <permission>
+permissions:
+  blocklimit.admin:
+    description: OP command permission.
+    default: op
+  blocklimit.bypass:
+    description: block limit check bypass permission
+    default: op
